@@ -15,15 +15,14 @@ export const Content = () => {
       <MaxWidthWrapper className="relative z-20 pb-20 pt-20 md:pb-28 md:pt-40">
         <SectionHeadingSpacing>
           <SectionHeading>
-            Show the people
+            Show the world
             <br />
             <span className="bg-gradient-to-br from-rose-400 to-rose-700 bg-clip-text text-transparent">
-              what makes you great
+            and stand out with confidence.
             </span>
           </SectionHeading>
           <SectionSubheading>
-            Here's a good way to show some high levels pros as to what your
-            product does and for who.
+          Our mission is to help you build beautiful, accessible, fast, and secure websites that work seamlessly across all browsers for every user. Explore our site for expert content and guidance, brought to you by the CORE team and industry experts.
           </SectionSubheading>
         </SectionHeadingSpacing>
 
@@ -37,7 +36,7 @@ export const Content = () => {
 
 const Grid = () => (
   <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
-    <Tower />
+    {/* <Tower />  to remove */}
     <div className="col-span-1 grid grid-cols-2 gap-4 lg:col-span-8 lg:grid-cols-2">
       <MiniCard1 />
       <MiniCard2 />

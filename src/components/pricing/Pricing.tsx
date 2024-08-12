@@ -46,7 +46,7 @@ export const Pricing = () => {
             price="$79/mo"
             bestFor="Best for 5-50 users"
             CTA={
-              <GhostButton className="w-full bg-zinc-50 text-zinc-950 hover:bg-zinc-200 hover:text-zinc-900">
+              <GhostButton className="w-full bg-rose-50 text-rose-950 hover:bg-rose-200 hover:text-rose-900">
                 14-day free trial
               </GhostButton>
             }
@@ -94,10 +94,10 @@ const PriceCard = ({
 }) => {
   return (
     <Card>
-      <div className="flex flex-col items-center border-b border-zinc-700 pb-6">
+      <div className="flex flex-col items-center border-b border-rose-700 pb-6">
         <span className="mb-6 inline-block text-zinc-50">{tier}</span>
         <span className="mb-3 inline-block text-4xl font-medium ">{price}</span>
-        <span className="bg-gradient-to-br from-zinc-200 to-zinc-500 bg-clip-text text-center text-transparent">
+        <span className="bg-gradient-to-br from-rose-200 to-rose-500 bg-clip-text text-center text-transparent">
           {bestFor}
         </span>
       </div>
@@ -122,7 +122,7 @@ const Benefit = ({ text, checked }: BenefitType) => {
   return (
     <div className="flex items-center gap-3">
       {checked ? (
-        <span className="grid size-5 place-content-center rounded-full bg-blue-600 text-sm text-zinc-50">
+        <span className="grid size-5 place-content-center rounded-full bg-rose-600 text-sm text-zinc-50">
           <FiCheck />
         </span>
       ) : (

@@ -120,9 +120,9 @@ const Feature = ({ title, description, Icon }: FeatureType) => {
         marginRight: MARGIN,
       }}
     >
-      <Icon className="size-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-700 p-3 text-blue-50" />
+      <Icon className="size-12 rounded-full bg-gradient-to-br from-rose-400 to-rose-700 p-3 text-rose-50" />
       <p className="mb-1.5 mt-3 text-lg font-medium">{title}</p>
-      <p className="text-sm text-zinc-400">{description}</p>
+      <p className="text-sm text-rose-400">{description}</p>
     </Card>
   );
 };

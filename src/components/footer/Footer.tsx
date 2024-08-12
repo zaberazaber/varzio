@@ -91,8 +91,8 @@ const LogoColumn = () => {
   return (
     <div className="col-span-6 md:col-span-4">
       <NavLogo />
-      <span className="mt-3 inline-block text-xs text-zinc-400">
-        © Varzio.dev - All rights reserved.
+      <span className="mt-3 inline-block text-xs text-rose-400">
+        © Glarik.dev - All rights reserved.
       </span>
     </div>
   );

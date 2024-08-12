@@ -11,7 +11,7 @@ export const CodeCard = () => {
 
   return (
     <Card className="mx-auto max-w-3xl pt-3">
-      <div className="-mx-9 mb-6 flex items-center justify-between border-b border-zinc-700 px-6 pb-3">
+      <div className="-mx-9 mb-6 flex items-center justify-between border-b border-rose-700 px-6 pb-3">
         <div className="flex items-center gap-3">
           <ToggleChip
             onClick={() => setSelected("js")}
@@ -55,7 +55,7 @@ const ToggleChip = ({
   return (
     <button
       onClick={onClick}
-      className={`rounded px-1.5 py-0.5 text-sm font-medium transition-colors ${selected ? "bg-blue-600 text-zinc-50" : "bg-zinc-900 text-zinc-50 hover:bg-zinc-700"}`}
+      className={`rounded px-1.5 py-0.5 text-sm font-medium transition-colors ${selected ? "bg-rose-600 text-rose-50" : "bg-rose-900 text-rose-50 hover:bg-rose-700"}`}
     >
       {children}
     </button>

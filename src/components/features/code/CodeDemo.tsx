@@ -10,9 +10,9 @@ import { SectionSubheading } from "@/components/utils/SectionSubheading";
 
 export const CodeDemo = () => {
   return (
-    <section className="relative overflow-hidden border-y border-zinc-700">
+    <section className="relative overflow-hidden border-y border-rose-500">
       <MaxWidthWrapper className="relative z-20 py-20 md:py-36">
-        <span className="mx-auto mb-3 block w-fit rounded bg-gradient-to-br from-zinc-800 to-zinc-950 p-3 text-3xl shadow-md shadow-blue-900">
+        <span className="mx-auto mb-3 block w-fit rounded bg-gradient-to-br from-rose-800 to-rose-950 p-3 text-3xl shadow-md shadow-rose-400">
           <FiZap />
         </span>
         <SectionHeadingSpacing>

@@ -8,7 +8,7 @@ export const MiniCard2 = () => {
   return (
     <div className="col-span-2 h-[415px] sm:h-[375px] md:col-span-1">
       <Card>
-        <CalloutChip>Callout #3</CalloutChip>
+        <CalloutChip>WORK</CalloutChip>
         <p className="mb-1.5 text-2xl">Let customers talk for you</p>
         <p className="text-zinc-400">
           Someone else saying that they love you is a lot more powerful than

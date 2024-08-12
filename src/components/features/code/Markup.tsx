@@ -9,7 +9,7 @@ export const Markup = ({ code, lang }: { code: string; lang: string }) => {
         <pre style={style}>
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ line })}>
-              <span className="inline-block w-[40px] select-none text-zinc-400">
+              <span className="inline-block w-[40px] select-none text-rose-400">
                 {i + 1}
               </span>
               {line.map((token, key) => (
