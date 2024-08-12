@@ -16,8 +16,8 @@ export const Beams = () => {
       left: Math.floor(numColumns * 0.05) * GRID_BOX_SIZE,
       transition: {
         duration: 3.5,
-        repeatDelay: 5,
-        delay: 2,
+        repeatDelay: 3,
+        delay: 1,
       },
     },
     {
@@ -25,7 +25,7 @@ export const Beams = () => {
       left: Math.floor(numColumns * 0.15) * GRID_BOX_SIZE,
       transition: {
         duration: 3.5,
-        repeatDelay: 10,
+        repeatDelay: 7,
         delay: 4,
       },
     },
@@ -38,7 +38,7 @@ export const Beams = () => {
       left: Math.floor(numColumns * 0.75) * GRID_BOX_SIZE,
       transition: {
         duration: 2,
-        repeatDelay: 7.5,
+        repeatDelay: 3.5,
         delay: 3.5,
       },
     },
@@ -54,6 +54,15 @@ export const Beams = () => {
     {
       top: GRID_BOX_SIZE * 2,
       left: Math.floor(numColumns * 1) * GRID_BOX_SIZE - GRID_BOX_SIZE,
+      transition: {
+        duration: 5,
+        repeatDelay: 5,
+        delay: 5,
+      },
+    },
+    {
+      top: GRID_BOX_SIZE * 3,
+      left: Math.floor(numColumns * 2) * GRID_BOX_SIZE - GRID_BOX_SIZE,
       transition: {
         duration: 5,
         repeatDelay: 5,

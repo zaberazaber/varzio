@@ -18,8 +18,8 @@ export const LongCard = () => {
     <div className="col-span-2 h-fit sm:h-[209px]">
       <Card>
         <div className="relative z-20">
-          <CalloutChip>Callout #4</CalloutChip>
-          <p className="mb-1.5 text-2xl">Talk about integrations</p>
+          <CalloutChip>Tech Stack</CalloutChip>
+          <p className="mb-1.5 text-2xl">Technologies We Work On</p>
           <p className="max-w-sm text-zinc-400">
             If you connect with tools that people already know and use, show it
             off!
@@ -81,7 +81,7 @@ const SpinningLogos = () => {
           sizes.iconWrapperWidth +
           sizes.ringPadding,
       }}
-      className="absolute right-0 top-0 z-0 grid translate-x-1/3 place-content-center rounded-full bg-blue-900/50 shadow-inner"
+      className="absolute right-0 top-0 z-0 grid translate-x-1/3 place-content-center rounded-full bg-rose-900/50 shadow-inner"
     >
       <motion.div
         initial={{ rotate: 0 }}
@@ -117,7 +117,7 @@ const SpinningLogos = () => {
               initial={{ rotate: 0 }}
               animate={{ rotate: -360 }}
               transition={TRANSITION}
-              className="absolute grid place-content-center rounded-full bg-gradient-to-br from-blue-500 to-blue-800 text-blue-50 shadow-lg"
+              className="absolute grid place-content-center rounded-full bg-gradient-to-br from-rose-500 to-rose-800 text-blue-50 shadow-lg"
             >
               <icon.Icon
                 style={{

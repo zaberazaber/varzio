@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MaxWidthWrapper } from "../utils/MaxWidthWrapper";
-import { NavLogo } from "./NavLogo";
+import  NavLogo  from "./NavLogo";
 import { NavLinks } from "./NavLinks";
 import { NavCTAs } from "./NavCTAs";
 import { useMotionValueEvent, useScroll, motion } from "framer-motion";

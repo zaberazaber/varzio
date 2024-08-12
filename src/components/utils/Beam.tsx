@@ -24,14 +24,14 @@ export const Beam = ({
         ease: "easeInOut",
         duration: 3,
         repeat: Infinity,
-        repeatDelay: 1.5,
+        repeatDelay: 0.2,
         ...transition,
       }}
       style={{
         top,
         left,
       }}
-      className="absolute z-10 h-[64px] w-[1px] bg-gradient-to-b from-blue-500/0 to-blue-500"
+      className="absolute z-10 h-[64px] w-[1px] bg-gradient-to-b from-blue-500/0 to-red-500"
     />
   );
 };

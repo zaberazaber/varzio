@@ -1,6 +1,6 @@
 import React from "react";
 import { CornerGrid } from "../utils/CornerGrid";
-import { NavLogo } from "../navbar/NavLogo";
+import  NavLogo  from "../navbar/NavLogo";
 import Link from "next/link";
 import { BubbleButton } from "../buttons/BubbleButton";
 import { SiGithub, SiX } from "react-icons/si";

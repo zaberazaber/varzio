@@ -27,7 +27,7 @@ const LOOP_DURATION = 6;
 const Ping = () => {
   return (
     <div className="absolute bottom-0 left-1/2 w-fit -translate-x-1/2 translate-y-1/2">
-      <FiLink className="relative z-10 text-7xl text-blue-200" />
+      <FiLink className="relative z-10 text-7xl text-rose-200" />
       <Band delay={0} />
       <Band delay={LOOP_DURATION * 0.25} />
       <Band delay={LOOP_DURATION * 0.5} />
@@ -59,7 +59,7 @@ const Band = ({ delay }: { delay: number }) => {
         ease: "linear",
         delay,
       }}
-      className="absolute left-[50%] top-[50%] z-0 size-80 rounded-full border border-blue-600 bg-gradient-to-br from-blue-600/50 to-blue-950/20"
+      className="absolute left-[50%] top-[50%] z-0 size-80 rounded-full border border-rose-600 bg-gradient-to-br from-rose-600/50 to-blue-950/20"
     />
   );
 };
