@@ -4,9 +4,9 @@ import  {Data} from "./componentlist"
   
 
 const generateTiles = () =>{
- return Data.map(el => {
+ return Data.map((el, index )=> {
     return(
-          <Tile name={el.name} url={el.url} iconMain={el.iconMain} iconSecondary={el.iconSecondary}/>
+          <Tile name={el.name} url={el.url} iconMain={el.iconMain} iconSecondary={el.iconSecondary} key={index}/>
     )  
 })
    
