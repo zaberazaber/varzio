@@ -5,7 +5,10 @@ export const NavLinks = () => {
   return (
     <ul className="flex gap-3 text-zinc-400 md:gap-9">
       <li>
-        <NavLink href="/#features">Features</NavLink>
+        <NavLink href="/Ocean">Ocean</NavLink>
+      </li>
+      <li>
+        <NavLink href="/#features">Team</NavLink>
       </li>
       <li>
         <NavLink href="/#testimonials">Testimonials</NavLink>
@@ -13,11 +16,11 @@ export const NavLinks = () => {
       <li>
         <NavLink href="/#pricing">Pricing</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink href="/#" external>
           Careers
         </NavLink>
-      </li>
+      </li> */}
     </ul>
   );
 };

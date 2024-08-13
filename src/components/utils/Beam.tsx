@@ -6,8 +6,8 @@ export const Beam = ({
   left,
   transition = {},
 }: {
-  top: number;
-  left: number;
+  top?: number;
+  left?: number;
   transition?: AnimationProps["transition"];
 }) => {
   return (
