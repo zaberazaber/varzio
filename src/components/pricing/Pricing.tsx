@@ -30,12 +30,12 @@ export const Pricing = () => {
           <PriceCard
             tier="Free"
             price="$0/mo"
-            bestFor="Best for 1-5 users"
+            bestFor="Best for Getting Started"
             CTA={<GhostButton className="w-full">Get started free</GhostButton>}
             benefits={[
-              { text: "One workspace", checked: true },
+              { text: "Free Components", checked: true },
               { text: "Email support", checked: true },
-              { text: "1 day data retention", checked: false },
+              { text: "New Components", checked: false },
               { text: "Custom roles", checked: false },
               { text: "Priority support", checked: false },
               { text: "SSO", checked: false },
@@ -44,17 +44,17 @@ export const Pricing = () => {
           <PriceCard
             tier="Pro"
             price="$79/mo"
-            bestFor="Best for 5-50 users"
+            bestFor="Best for Basic Portfolio"
             CTA={
               <GhostButton className="w-full bg-rose-50 text-rose-950 hover:bg-rose-200 hover:text-rose-900">
                 14-day free trial
               </GhostButton>
             }
             benefits={[
-              { text: "Five workspaces", checked: true },
+              { text: "Free + Pro Components", checked: true },
               { text: "Email support", checked: true },
-              { text: "7 day data retention", checked: true },
-              { text: "Custom roles", checked: true },
+              { text: "Monthly New Components", checked: true },
+              { text: "Custom Components", checked: false },
               { text: "Priority support", checked: false },
               { text: "SSO", checked: false },
             ]}
@@ -62,13 +62,13 @@ export const Pricing = () => {
           <PriceCard
             tier="Enterprise"
             price="Contact us"
-            bestFor="Best for 50+ users"
+            bestFor="Best for Enterprise Websites"
             CTA={<GhostButton className="w-full">Contact us</GhostButton>}
             benefits={[
-              { text: "Unlimited workspaces", checked: true },
+              { text: "Unlimited Access", checked: true },
               { text: "Email support", checked: true },
-              { text: "30 day data retention", checked: true },
-              { text: "Custom roles", checked: true },
+              { text: "Monthly New Templates", checked: true },
+              { text: "Custom Components", checked: true },
               { text: "Priority support", checked: true },
               { text: "SSO", checked: true },
             ]}

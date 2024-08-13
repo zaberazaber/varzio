@@ -7,27 +7,27 @@ export const Stats = () => {
     <div className="relative overflow-hidden border-y border-rose-700 bg-rose-900/30">
       <div className="relative z-20 mx-auto max-w-3xl px-4 py-12">
         <h2 className="mx-auto mb-9 block w-fit bg-gradient-to-br from-rose-200 to-rose-500 bg-clip-text text-center text-lg text-transparent">
-          Have hard stats? Numbers don't lie!
+          Few Stats...
         </h2>
 
         <div className="flex flex-col items-center justify-center sm:flex-row">
           <Stat
-            num={45}
+            num={100}
             suffix="%"
-            subheading="Lorem ipsum dolor sit amet consectetur"
+            subheading="We Deliver On Time"
           />
           <div className="h-[1px] w-12 bg-rose-600 sm:h-12 sm:w-[1px]" />
           <Stat
-            num={15.5}
+            num={45}
             decimals={1}
-            suffix="K+"
-            subheading="Lorem ipsum dolor sit amet consectetur"
+            suffix="+"
+            subheading="Projects Delivered Successfully"
           />
           <div className="h-[1px] w-12 bg-rose-600 sm:h-12 sm:w-[1px]" />
           <Stat
-            num={20}
-            suffix="B+"
-            subheading="Lorem ipsum dolor sit amet consectetur"
+            num={1000}
+            suffix="+"
+            subheading="Components Available"
           />
         </div>
       </div>
