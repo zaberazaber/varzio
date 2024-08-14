@@ -4,7 +4,7 @@ export const ComponentData =  [
       "iconMain": "Accordion",
       "iconSecondary": "AccordionS",
       "name": "Accordions",
-      "url": "/component/Accordions"
+      "url": "/component/accordions"
     },
     {
       "_id": "66bb5610144993d8243fe63d",

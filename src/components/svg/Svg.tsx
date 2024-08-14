@@ -5,15 +5,72 @@ interface Props {
   width?: number
   height?: number
   iconName?: string
+  color?:string
 }
 
 const AccordionIcon: React.FC<Props> = props => {
   switch(props.iconName){
+    case "Code": {
+      return (
+        <svg
+         stroke={props.color ? props.color : "currentColor"}
+        fill="none"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        className="relative z-10 text-lg md:text-sm"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline points="16 18 22 12 16 6"></polyline>
+        <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+      )
+    }
+    case "Eye": {
+      return (
+        <svg
+        stroke={props.color ? props.color : "currentColor"}
+        fill="none"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        className="relative z-10 text-lg md:text-sm"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+        <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+      )
+    }
+    case "Copy": {
+      return (
+        <svg
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+      )
+    }
     case "AccordionS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -30,8 +87,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Accordion": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -48,8 +105,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Button": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -67,8 +124,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "ButtonS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -86,8 +143,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Calendar": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -107,8 +164,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "CalendarS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -128,8 +185,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Card": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -146,8 +203,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "CardS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -164,8 +221,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Carousel": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -183,8 +240,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "CarouselS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -202,8 +259,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Countdown": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -222,8 +279,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "CountdownS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -242,8 +299,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Dropdown": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -262,8 +319,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "DropdownS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -282,8 +339,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Grid": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -303,8 +360,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "GridS": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -324,8 +381,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Input": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -344,8 +401,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "InputS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -364,8 +421,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Link": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -383,8 +440,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "LinkS": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -402,8 +459,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Loader": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -427,8 +484,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "LoaderS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -452,8 +509,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Modal": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -473,8 +530,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "ModalS": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -494,8 +551,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Navbar": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -514,8 +571,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "NavbarS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -534,8 +591,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Notification": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -553,8 +610,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "NotificationS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -572,8 +629,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Other": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -592,8 +649,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "OtherS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -612,8 +669,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Progress": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -637,8 +694,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "ProgressS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -662,8 +719,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Tab": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -681,8 +738,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "TabS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -700,8 +757,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Table": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -718,8 +775,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "TableS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -736,8 +793,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Text": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -758,8 +815,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "TextS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -780,8 +837,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Toggle": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -799,8 +856,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "ToggleS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -818,8 +875,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "3D": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -838,8 +895,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "3DS": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -858,8 +915,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Faq": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -878,8 +935,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "FaqS": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -898,8 +955,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Feature": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -922,8 +979,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "FeatureS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -946,8 +1003,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Form": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -965,8 +1022,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "FormS": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -984,8 +1041,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Hero": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -1003,8 +1060,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "HeroS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -1022,7 +1079,7 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Kanban": {
       return (
         <svg
-        stroke="currentColor"
+         stroke={props.color ? props.color : "currentColor"}
         fill="currentColor"
         strokeWidth={0}
         viewBox="0 0 256 256"
@@ -1038,7 +1095,7 @@ const AccordionIcon: React.FC<Props> = props => {
     case "KanbanS": {
       return (
         <svg
-      stroke="currentColor"
+       stroke={props.color ? props.color : "currentColor"}
       fill="currentColor"
       strokeWidth={0}
       viewBox="0 0 256 256"
@@ -1054,8 +1111,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Pricing": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -1073,8 +1130,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "PricingS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -1092,8 +1149,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Stat": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -1112,8 +1169,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "StatS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -1132,8 +1189,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "SignIn": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -1152,8 +1209,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "SignInS": {
       return (
         <svg
-      stroke="currentColor"
-      fill="none"
+       stroke={props.color ? props.color : "currentColor"}
+       fill="none"
       strokeWidth={2}
       viewBox="0 0 24 24"
       strokeLinecap="round"
@@ -1172,8 +1229,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "Testimonial": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
@@ -1193,8 +1250,8 @@ const AccordionIcon: React.FC<Props> = props => {
     case "TestimonialS": {
       return (
         <svg
-        stroke="currentColor"
-        fill="none"
+         stroke={props.color ? props.color : "currentColor"}
+         fill="none"
         strokeWidth={2}
         viewBox="0 0 24 24"
         strokeLinecap="round"
