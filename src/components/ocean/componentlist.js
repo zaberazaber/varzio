@@ -1,4 +1,4 @@
-export const Data =  [
+export const ComponentData =  [
     {
       "_id": "66bb56109dceb457556e19a6",
       "iconMain": "Accordion",

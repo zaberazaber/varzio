@@ -815,6 +815,402 @@ const AccordionIcon: React.FC<Props> = props => {
       </svg>
       )
     }
+    case "3D": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="relative z-10 mb-2 text-2xl text-rose-600"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+        <line x1={12} y1="22.08" x2={12} y2={12} />
+      </svg>
+      )
+    }
+    case "3DS": {
+      return (
+        <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+      <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+      <line x1={12} y1="22.08" x2={12} y2={12} />
+    </svg>
+      )
+    }
+    case "Faq": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="relative z-10 mb-2 text-2xl text-rose-600"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx={12} cy={12} r={10} />
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+        <line x1={12} y1={17} x2="12.01" y2={17} />
+      </svg>
+      )
+    }
+    case "FaqS": {
+      return (
+        <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx={12} cy={12} r={10} />
+      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+      <line x1={12} y1={17} x2="12.01" y2={17} />
+    </svg>
+      )
+    }
+    case "Feature": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="relative z-10 mb-2 text-2xl text-rose-600"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx={12} cy={12} r={10} />
+        <line x1="14.31" y1={8} x2="20.05" y2="17.94" />
+        <line x1="9.69" y1={8} x2="21.17" y2={8} />
+        <line x1="7.38" y1={12} x2="13.12" y2="2.06" />
+        <line x1="9.69" y1={16} x2="3.95" y2="6.06" />
+        <line x1="14.31" y1={16} x2="2.83" y2={16} />
+        <line x1="16.62" y1={12} x2="10.88" y2="21.94" />
+      </svg>
+      )
+    }
+    case "FeatureS": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx={12} cy={12} r={10} />
+        <line x1="14.31" y1={8} x2="20.05" y2="17.94" />
+        <line x1="9.69" y1={8} x2="21.17" y2={8} />
+        <line x1="7.38" y1={12} x2="13.12" y2="2.06" />
+        <line x1="9.69" y1={16} x2="3.95" y2="6.06" />
+        <line x1="14.31" y1={16} x2="2.83" y2={16} />
+        <line x1="16.62" y1={12} x2="10.88" y2="21.94" />
+      </svg>
+      )
+    }
+    case "Form": {
+      return (
+        <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="relative z-10 mb-2 text-2xl text-rose-600"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 20h9" />
+      <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+    </svg>
+      )
+    }
+    case "FormS": {
+      return (
+        <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 20h9" />
+      <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+    </svg>
+      )
+    }
+    case "Hero": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="relative z-10 mb-2 text-2xl text-rose-600"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx={12} cy={8} r={7} />
+        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+      </svg>
+      )
+    }
+    case "HeroS": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx={12} cy={8} r={7} />
+        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+      </svg>
+      )
+    }
+    case "Kanban": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="currentColor"
+        strokeWidth={0}
+        viewBox="0 0 256 256"
+        className="relative z-10 mb-2 text-2xl text-rose-600"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M216,48H40a8,8,0,0,0-8,8V208a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V160h48v16a16,16,0,0,0,16,16h40a16,16,0,0,0,16-16V56A8,8,0,0,0,216,48ZM88,208H48V128H88Zm0-96H48V64H88Zm64,32H104V64h48Zm56,32H168V128h40Zm0-64H168V64h40Z" />
+      </svg>
+      )
+    }
+    case "KanbanS": {
+      return (
+        <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth={0}
+      viewBox="0 0 256 256"
+      className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M216,48H40a8,8,0,0,0-8,8V208a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V160h48v16a16,16,0,0,0,16,16h40a16,16,0,0,0,16-16V56A8,8,0,0,0,216,48ZM88,208H48V128H88Zm0-96H48V64H88Zm64,32H104V64h48Zm56,32H168V128h40Zm0-64H168V64h40Z" />
+    </svg>
+      )
+    }
+    case "Pricing": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="relative z-10 mb-2 text-2xl text-rose-600"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line x1={12} y1={1} x2={12} y2={23} />
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+      </svg>
+      )
+    }
+    case "PricingS": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line x1={12} y1={1} x2={12} y2={23} />
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+      </svg>
+      )
+    }
+    case "Stat": {
+      return (
+        <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="relative z-10 mb-2 text-2xl text-rose-600"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line x1={18} y1={20} x2={18} y2={10} />
+      <line x1={12} y1={20} x2={12} y2={4} />
+      <line x1={6} y1={20} x2={6} y2={14} />
+    </svg>
+      )
+    }
+    case "StatS": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line x1={18} y1={20} x2={18} y2={10} />
+        <line x1={12} y1={20} x2={12} y2={4} />
+        <line x1={6} y1={20} x2={6} y2={14} />
+      </svg>
+      )
+    }
+    case "SignIn": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="relative z-10 mb-2 text-2xl text-rose-600"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+        <polyline points="10 17 15 12 10 7" />
+        <line x1={15} y1={12} x2={3} y2={12} />
+      </svg>
+      )
+    }
+    case "SignInS": {
+      return (
+        <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+      <polyline points="10 17 15 12 10 7" />
+      <line x1={15} y1={12} x2={3} y2={12} />
+    </svg>
+      )
+    }
+    case "Testimonial": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="relative z-10 mb-2 text-2xl text-rose-600"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx={9} cy={7} r={4} />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+      )
+    }
+    case "TestimonialS": {
+      return (
+        <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="absolute -right-4 -top-4 z-10 text-7xl text-rose-200"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx={9} cy={7} r={4} />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+      )
+    }
   }
 
   

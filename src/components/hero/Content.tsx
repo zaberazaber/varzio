@@ -80,7 +80,7 @@ export const Content = () => {
         className="flex flex-col items-center gap-4 sm:flex-row"
       >
         <SplashButton
-          onClick={() => router.push("/ocean")}
+          onClick={() => router.push("/Ocean")}
           className="flex items-center gap-2"
         >
           Dive Into Ocean

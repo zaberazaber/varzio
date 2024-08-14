@@ -10,7 +10,7 @@ export const NavBar = () => {
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 150) {
+    if (latest > 50) {
       setScrolled(true);
     } else {
       setScrolled(false);
