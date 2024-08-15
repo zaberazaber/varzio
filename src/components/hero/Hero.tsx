@@ -5,7 +5,7 @@ import { MockupScreen } from "./MockupScreen";
 
 export const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center px-12 pb-48 pt-12 md:pt-24 overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center px-3 pb-48 pt-12 md:pt-24 overflow-hidden">
       <Content />
       <Beams />
       <GradientGrid />

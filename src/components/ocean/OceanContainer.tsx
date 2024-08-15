@@ -8,7 +8,7 @@ import  { SectionData } from "./sectionlist"
 
 export default function OceanContainer() {
   return (
-    <MaxWidthWrapper className="relative flex flex-col items-center justify-center px-12 pb-48 pt-24 md:pt-24 overflow-hidden">
+    <MaxWidthWrapper className="relative flex flex-col items-center justify-center px-3 pb-48 pt-24 md:pt-24 overflow-hidden">
              <motion.h1
         initial={{
           y: 25,
