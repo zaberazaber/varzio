@@ -6,11 +6,22 @@ import { BubbleButton } from "@/components/buttons/BubbleButton";
 import { SiGithub } from "react-icons/si";
 import { FiStar } from "react-icons/fi";
 
-export const CodeCard = () => {
-  const [selected, setSelected] = useState<"js" | "py">("js");
+
+interface Props {
+  code: string
+}
+
+export const CodeCard = (props: Props) => {
+  const [selected, setSelected] = useState<"js" | "ts">("js");
+
+
+  const javascriptCode = props?.code;
+
+
+const typescriptCode = props?.code;
 
   return (
-    <Card className="mx-auto max-w-3xl pt-3">
+    <Card className="mx-auto w-full pt-3">
       <div className="-mx-9 mb-6 flex items-center justify-between border-b border-rose-700 px-6 pb-3">
         <div className="flex items-center gap-3">
           <ToggleChip
@@ -20,22 +31,17 @@ export const CodeCard = () => {
             JavaScript
           </ToggleChip>
           <ToggleChip
-            onClick={() => setSelected("py")}
-            selected={selected === "py"}
+            onClick={() => setSelected("ts")}
+            selected={selected === "ts"}
           >
-            Python
+            TypeScript
           </ToggleChip>
         </div>
-        <BubbleButton className="text-xs">
-          <SiGithub />
-          <FiStar className="hidden sm:inline" />
-          <span className="hidden sm:inline">1,234</span>
-        </BubbleButton>
       </div>
       <div className="no-scrollbar -mx-6 overflow-x-scroll px-6">
         <Markup
-          code={selected === "js" ? javascriptCode : pythonCode}
-          lang={selected === "js" ? "javascript" : "python"}
+          code={selected === "js" ? javascriptCode : typescriptCode}
+          lang={selected === "js" ? "javascript" : "typescript"}
         />
       </div>
       <PulseLine />
@@ -62,18 +68,4 @@ const ToggleChip = ({
   );
 };
 
-const javascriptCode = `import { initializeSDK } from "your-package";
 
-const app = initializeSDK({
-    apiKey: "sk_abc123"
-});
-
-app.doCoolThing();`;
-
-const pythonCode = `import your_package
-
-app = your_package.init({
-    "api_key": "sk_abc123"
-})
-
-app.do_cool_thing()`;

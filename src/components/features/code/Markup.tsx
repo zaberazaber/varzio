@@ -1,15 +1,26 @@
 import React from "react";
 import { Highlight } from "prism-react-renderer";
+import customDarkTheme from "./darktheme";
+import nightowltheme from "./nightowltheme";
+import draculatheme from "./draculatheme";
+import tangyTheme from "./tangytheme";
+
 
 export const Markup = ({ code, lang }: { code: string; lang: string }) => {
   return (
     // @ts-ignore
-    <Highlight theme={theme} code={code} language={lang}>
+    <Highlight theme={tangyTheme} code={code} language={lang}>
       {({ style, tokens, getLineProps, getTokenProps }) => (
-        <pre style={style}>
+     <pre
+     className={`w-max  bg-[${tangyTheme.plain.backgroundColor}] text-[${tangyTheme.plain.color}]  text-xs  p-4 rounded-lg`}
+     style={{
+       ...style,
+       margin: 0,
+     }}>
+      <span className="scroll-smooth">
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ line })}>
-              <span className="inline-block w-[40px] select-none text-rose-400">
+              <span className="inline-block w-[40px] select-none text-zinc-400">
                 {i + 1}
               </span>
               {line.map((token, key) => (
@@ -17,6 +28,7 @@ export const Markup = ({ code, lang }: { code: string; lang: string }) => {
               ))}
             </div>
           ))}
+   </span>
         </pre>
       )}
     </Highlight>

@@ -23,7 +23,7 @@ export const CodeDemo = () => {
             Show why you're better than your competitors
           </SectionSubheading>
         </SectionHeadingSpacing>
-        <CodeCard />
+        <CodeCard code="test" />
         <Stepper />
       </MaxWidthWrapper>
       <Minigrid />
