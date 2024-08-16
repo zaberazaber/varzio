@@ -8,8 +8,8 @@ import { FiStar } from "react-icons/fi";
 
 interface codeObject {
   name: string
-  codejs: string
-  codets: string
+  codejs?: string
+  codets?: string
 }
 
 interface Props {
@@ -43,6 +43,7 @@ export const CodeCard = (props: Props) => {
             </div>
             <div className="no-scrollbar -mx-6 overflow-x-scroll px-6">
               <Markup
+              //@ts-ignore
                 code={selected === "jsx" ? javascriptCode : typescriptCode}
                 lang={selected === "jsx" ? "javascript" : "typescript"}
               />

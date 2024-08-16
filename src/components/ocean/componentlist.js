@@ -46,7 +46,7 @@ export const ComponentData =  [
       "iconMain": "Dropdown",
       "iconSecondary": "DropdownS",
       "name": "Dropdown Menus",
-      "url": "/componentdetail/dropdown"
+      "url": "/componentdetail/dropdownmenu"
     },
     {
       "_id": "66bb5610bd3bdd0e75302e89",

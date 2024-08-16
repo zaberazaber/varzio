@@ -2,7 +2,7 @@ import { GradientGrid } from "../../components/hero/GradientGrid";
 import { MaxWidthWrapper } from "../../components/utils/MaxWidthWrapper";
 import { motion } from "framer-motion";
 import { Beams } from "../../components/utils/Beams";
-import AccordionContainer from "@/components/ocean/oceancomponent/accordion/accordionContainer";
+import ComponentContainer from "@/components/ocean/oceancomponent/componentContainer";
 import { CodeCard } from "@/components/features/code/CodeCard";
 import BasicFAQ from "@/components/ocean/oceancomponent/accordion/basicFAQ/basicFaq";
 import  {BasicFaqCode}  from "@/components/ocean/oceancomponent/accordion/basicFAQ/basicFaqCode";
@@ -36,18 +36,18 @@ export default function Accordions() {
      
       <Beams/> 
       <GradientGrid />
-      <AccordionContainer name="Basic FAQ">
+      <ComponentContainer name="Basic FAQ">
         <BasicFAQ/>
         <CodeCard markup={BasicFaqCode} />
-      </AccordionContainer>
-      <AccordionContainer name="Vertical Accordion">
+      </ComponentContainer>
+      <ComponentContainer name="Vertical Accordion">
         <VerticalAccordion/>
         <CodeCard markup={VerticalAccordionCode}/>
-      </AccordionContainer>
-      <AccordionContainer name="Accordion Path">
+      </ComponentContainer>
+      <ComponentContainer name="Accordion Path">
         <AccordionPath />
         <CodeCard markup={AccordionPathCode}/>
-      </AccordionContainer>
+      </ComponentContainer>
     </MaxWidthWrapper>
   );
 }
