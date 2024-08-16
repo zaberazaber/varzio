@@ -23,7 +23,7 @@ export const CodeCard = (props: Props) => {
       const javascriptCode = el.codejs;
       const typescriptCode = el.codets;
         return (
-          <Card className="mx-auto w-full pt-3 ">
+          <Card className="mx-auto w-full pt-3" key={index}>
             <div className="-mx-9 mb-6 flex items-center justify-between border-b border-rose-700 px-6 pb-3">
               <div className="flex items-center gap-3">
                 <ToggleChip
