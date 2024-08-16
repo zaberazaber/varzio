@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { Beams } from "../../components/utils/Beams";
 import ComponentContainer from "@/components/ocean/oceancomponent/componentContainer";
 import { CodeCard } from "@/components/features/code/CodeCard";
-import { HamburgerButton } from "@/components/ocean/oceancomponent/button/hamburger";
-import { HamburgerCode } from "@/components/ocean/oceancomponent/button/hamburgerCode";
+import { HamburgerButton } from "@/components/ocean/oceancomponent/button/hamburger/hamburger";
+import { HamburgerCode } from "@/components/ocean/oceancomponent/button/hamburger/hamburgerCode";
+import { EncryptButton } from "@/components/ocean/oceancomponent/button/encrypt/encrypt";
+import { EncryptCode } from "@/components/ocean/oceancomponent/button/encrypt/encryptCode";
 
 export default function Buttons() {
   return (
@@ -38,6 +40,13 @@ export default function Buttons() {
        <HamburgerButton />
         </div>
         <CodeCard markup={HamburgerCode} />
+      </ComponentContainer>
+      <ComponentContainer name="Encypt Button">
+      
+       <div className="grid place-content-center">
+       <EncryptButton />
+        </div>
+        <CodeCard markup={EncryptCode} />
       </ComponentContainer>
     </MaxWidthWrapper>
   );
