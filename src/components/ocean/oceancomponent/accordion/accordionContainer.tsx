@@ -51,7 +51,7 @@ export default function AccordionContainer(props : Props) {
           className="no-scrollbar relative w-full overflow-hidden overflow-y-scroll border border-rose-300 bg-white"
           style={{display: "block"}}
         >
-          <div className="min-h-[200px] place-content-center bg-neutral-900 p-4">
+          <div className=" relative min-h-[200px] place-content-center bg-neutral-900 p-4">
             {activeButton === "view" ?
                 <>
                      {props.children[0]} 

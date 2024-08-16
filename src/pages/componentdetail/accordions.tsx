@@ -5,7 +5,9 @@ import { Beams } from "../../components/utils/Beams";
 import AccordionContainer from "@/components/ocean/oceancomponent/accordion/accordionContainer";
 import { CodeCard } from "@/components/features/code/CodeCard";
 import BasicFAQ from "@/components/ocean/oceancomponent/accordion/basicFAQ/basicFaq";
-import  {js , ts}  from "@/components/ocean/oceancomponent/accordion/basicFAQ/basicFaqText";
+import  {BasicFaqCode}  from "@/components/ocean/oceancomponent/accordion/basicFAQ/basicFaqCode";
+import VerticalAccordion from "@/components/ocean/oceancomponent/accordion/verticalAccordion/verticalAccordion";
+import { VerticalAccordionCode } from "@/components/ocean/oceancomponent/accordion/verticalAccordion/verticalAccordionCode";
 
 export default function Accordions() {
   return (
@@ -34,11 +36,12 @@ export default function Accordions() {
       <GradientGrid />
       <AccordionContainer name="Basic FAQ">
         <BasicFAQ/>
-        <CodeCard code={js?.toString()}/>
+        <CodeCard markup={BasicFaqCode} />
       </AccordionContainer>
       <AccordionContainer name="Vertical Accordion">
-        <BasicFAQ/>
-        <CodeCard code={ts?.toString()}/>
+        <VerticalAccordion/>
+        <CodeCard markup={VerticalAccordionCode}/>
+       
       </AccordionContainer>
     </MaxWidthWrapper>
   );

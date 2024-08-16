@@ -6,47 +6,51 @@ import { BubbleButton } from "@/components/buttons/BubbleButton";
 import { SiGithub } from "react-icons/si";
 import { FiStar } from "react-icons/fi";
 
+interface codeObject {
+  name: string
+  codejs: string
+  codets: string
+}
 
 interface Props {
-  code: string
+  markup?: Array<codeObject>
 }
 
 export const CodeCard = (props: Props) => {
-  const [selected, setSelected] = useState<"js" | "ts">("js");
+  const [selected, setSelected] = useState<"jsx" | "tsx">("jsx");
 
-
-  const javascriptCode = props?.code;
-
-
-const typescriptCode = props?.code;
-
-  return (
-    <Card className="mx-auto w-full pt-3">
-      <div className="-mx-9 mb-6 flex items-center justify-between border-b border-rose-700 px-6 pb-3">
-        <div className="flex items-center gap-3">
-          <ToggleChip
-            onClick={() => setSelected("js")}
-            selected={selected === "js"}
-          >
-            JavaScript
-          </ToggleChip>
-          <ToggleChip
-            onClick={() => setSelected("ts")}
-            selected={selected === "ts"}
-          >
-            TypeScript
-          </ToggleChip>
-        </div>
-      </div>
-      <div className="no-scrollbar -mx-6 overflow-x-scroll px-6">
-        <Markup
-          code={selected === "js" ? javascriptCode : typescriptCode}
-          lang={selected === "js" ? "javascript" : "typescript"}
-        />
-      </div>
-      <PulseLine />
-    </Card>
-  );
+  return props?.markup?.map((el,index) => {
+      const javascriptCode = el.codejs;
+      const typescriptCode = el.codets;
+        return (
+          <Card className="mx-auto w-full pt-3 ">
+            <div className="-mx-9 mb-6 flex items-center justify-between border-b border-rose-700 px-6 pb-3">
+              <div className="flex items-center gap-3">
+                <ToggleChip
+                  onClick={() => setSelected("jsx")}
+                  selected={selected === "jsx"}
+                >
+                  JavaScript
+                </ToggleChip>
+                <ToggleChip
+                  onClick={() => setSelected("tsx")}
+                  selected={selected === "tsx"}
+                >
+                  TypeScript
+                </ToggleChip>
+              </div>
+              <p className="text-rose-400 px-1">{el.name}{"."}{selected}</p>
+            </div>
+            <div className="no-scrollbar -mx-6 overflow-x-scroll px-6">
+              <Markup
+                code={selected === "jsx" ? javascriptCode : typescriptCode}
+                lang={selected === "jsx" ? "javascript" : "typescript"}
+              />
+            </div>
+            <PulseLine />
+          </Card>
+        );
+    })
 };
 
 const ToggleChip = ({

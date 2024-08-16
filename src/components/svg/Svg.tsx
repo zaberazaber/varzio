@@ -15,10 +15,10 @@ const AccordionIcon: React.FC<Props> = props => {
         <svg
          stroke={props.color ? props.color : "currentColor"}
         fill="none"
-        stroke-width="2"
+        strokeWidth="2"
         viewBox="0 0 24 24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         className="relative z-10 text-lg md:text-sm"
         height="1em"
         width="1em"
@@ -34,10 +34,10 @@ const AccordionIcon: React.FC<Props> = props => {
         <svg
         stroke={props.color ? props.color : "currentColor"}
         fill="none"
-        stroke-width="2"
+        strokeWidth="2"
         viewBox="0 0 24 24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         className="relative z-10 text-lg md:text-sm"
         height="1em"
         width="1em"
@@ -53,10 +53,10 @@ const AccordionIcon: React.FC<Props> = props => {
         <svg
          stroke={props.color ? props.color : "currentColor"}
          fill="none"
-        stroke-width="2"
+        strokeWidth="2"
         viewBox="0 0 24 24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"

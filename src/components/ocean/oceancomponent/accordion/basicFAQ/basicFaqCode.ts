@@ -1,4 +1,5 @@
-export const js = `import React, { useState } from "react";
+export const BasicFaqCode = [
+  {name: "BasiqFAQ", codejs:`import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
 import useMeasure from "react-use-measure";
@@ -98,9 +99,7 @@ const Question = ({ title, children, defaultOpen = false }) => {
   );
 };
 
-export default BasicFAQ;`
-
-export const ts = `import React, { useState } from "react";
+export default BasicFAQ;`,codets:`import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
 import useMeasure from "react-use-measure";
@@ -208,4 +207,5 @@ const Question = ({
   );
 };
 
-export default BasicFAQ;`
+export default BasicFAQ;`}]
+

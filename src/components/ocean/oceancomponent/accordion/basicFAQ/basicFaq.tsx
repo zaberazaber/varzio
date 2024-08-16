@@ -100,7 +100,7 @@ const Question = ({
         }}
         className="overflow-hidden text-slate-600"
       >
-        <p ref={ref}>{children}</p>
+        <span ref={ref}>{children}</span>
       </motion.div>
     </motion.div>
   );
