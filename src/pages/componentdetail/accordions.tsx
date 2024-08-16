@@ -8,6 +8,8 @@ import BasicFAQ from "@/components/ocean/oceancomponent/accordion/basicFAQ/basic
 import  {BasicFaqCode}  from "@/components/ocean/oceancomponent/accordion/basicFAQ/basicFaqCode";
 import VerticalAccordion from "@/components/ocean/oceancomponent/accordion/verticalAccordion/verticalAccordion";
 import { VerticalAccordionCode } from "@/components/ocean/oceancomponent/accordion/verticalAccordion/verticalAccordionCode";
+import {AccordionPathCode} from "@/components/ocean/oceancomponent/accordion/accordionPath/accordionPathCode";
+import AccordionPath from "@/components/ocean/oceancomponent/accordion/accordionPath/accordionPath";
 
 export default function Accordions() {
   return (
@@ -41,7 +43,10 @@ export default function Accordions() {
       <AccordionContainer name="Vertical Accordion">
         <VerticalAccordion/>
         <CodeCard markup={VerticalAccordionCode}/>
-       
+      </AccordionContainer>
+      <AccordionContainer name="Accordion Path">
+        <AccordionPath />
+        <CodeCard markup={AccordionPathCode}/>
       </AccordionContainer>
     </MaxWidthWrapper>
   );
