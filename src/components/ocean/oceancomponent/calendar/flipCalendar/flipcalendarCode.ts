@@ -1,5 +1,5 @@
 export const FlipCalendarCode = [
-    {name: "Hamburger", codejs:`import React, { useState } from "react";
+    {name: "flipCalendar", codejs:`import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { format } from "date-fns";
 import { FiArrowLeft, FiArrowRight, FiEdit } from "react-icons/fi";
