@@ -17,7 +17,7 @@ import {
         <motion.div animate={open ? "open" : "closed"} className="relative">
           <button
             onClick={() => setOpen((pv) => !pv)}
-            className="flex items-center gap-2 px-3 py-2 rounded-md text-indigo-50 bg-indigo-500 hover:bg-indigo-500 transition-colors"
+            className="flex items-center gap-2 px-3 py-2 rounded-md text-indigo-50 bg-rose-500 hover:bg-rose-900 transition-colors"
           >
             <span className="font-medium text-sm">Post actions</span>
             <motion.span variants={iconVariants}>
@@ -54,7 +54,7 @@ import {
       <motion.li
         variants={itemVariants}
         onClick={() => setOpen(false)}
-        className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
+        className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-rose-100 text-rose-500 hover:text-rose-900 transition-colors cursor-pointer"
       >
         <motion.span variants={actionIconVariants}>
           <Icon />
