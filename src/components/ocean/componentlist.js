@@ -32,7 +32,7 @@ export const ComponentData =  [
       "iconMain": "Carousel",
       "iconSecondary": "CarouselS",
       "name": "Carousels",
-      "url": "/componentdetail/carousel"
+      "url": "/componentdetail/carousels"
     },
     {
       "_id": "66bb5610f8e961ef1c0815f8",
