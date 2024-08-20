@@ -34,7 +34,7 @@ export default function Cards() {
         }}
         className="mb-3 text-bold text-center text-2xl leading-tight  text-zinc-50  sm:text-2xl sm:leading-tight md:text-3xl md:leading-tight lg:text-4xl lg:leading-tight"
       >
-     <span className="text-rose-500">Countdown</span>
+     <span className="text-rose-500">Grid</span>
       </motion.h1>
      
       <Beams/> 

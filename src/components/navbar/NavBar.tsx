@@ -31,10 +31,10 @@ export const NavBar = () => {
         duration: 1.25,
         ease: "easeInOut",
       }}
-      className={`fixed left-0 right-0 top-0 z-50 bg-zinc-950/0 py-3 transition-colors ${scrolled && "bg-zinc-950/80 backdrop-blur"}`}
+      className={`fixed z-100 left-0 right-0 top-0 z-50 bg-zinc-950/0 py-3 transition-colors ${scrolled && "bg-zinc-950/80 backdrop-blur"}`}
     >
       <MaxWidthWrapper>
-        <div className="flex items-center justify-between">
+        <div className="flex  z-40 items-center justify-between">
           <div className="flex items-center gap-12">
             <NavLogo />
             <div className="hidden md:block">

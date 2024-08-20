@@ -13,6 +13,9 @@ const config: Config = {
   ],
   theme: {
     extend:{
+      zIndex: {
+        '100': '100',
+      },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

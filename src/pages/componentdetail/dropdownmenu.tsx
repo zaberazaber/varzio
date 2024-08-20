@@ -5,11 +5,11 @@ import { Beams } from "../../components/utils/Beams";
 import ComponentContainer from "@/components/ocean/oceancomponent/componentContainer";
 import { CodeCard } from "@/components/features/code/CodeCard";
 import { FlyoutLinkCode } from "@/components/ocean/oceancomponent/dropdown/flyoutLink/flyoutLinkCode";
-import { FlyoutExample, FlyoutLink } from "@/components/ocean/oceancomponent/dropdown/flyoutLink/flyoutLink";
+import { FlyoutExample } from "@/components/ocean/oceancomponent/dropdown/flyoutLink/flyoutLink";
 import StaggeredDropDown from "@/components/ocean/oceancomponent/dropdown/staggeredDropdown/staggeredDropdown";
 import { StaggeredDropdownCode } from "@/components/ocean/oceancomponent/dropdown/staggeredDropdown/staggeredDropdownCode";
-import { ShiftingDropDown } from "@/components/ocean/oceancomponent/dropdown/shiftingDropdown/shiftingdropdown";
 import {  ShiftingDropdownCode } from "@/components/ocean/oceancomponent/dropdown/shiftingDropdown/shiftingDropdownCode";
+import { ShiftingDropDown } from "@/components/ocean/oceancomponent/dropdown/shiftingDropdown/shiftingDropdown";
 
 
 export default function Cards() {
