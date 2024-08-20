@@ -43,7 +43,7 @@ const BlogPostCarousel = () => {
       <div className="relative overflow-hidden p-4">
         <div className="mx-auto max-w-6xl">
           <div className="flex items-center justify-between">
-            <h2 className="mb-4 text-4xl">The Team Blog</h2>
+            <h2 className="mb-4  text-zinc-700 text-4xl">The Team Blog</h2>
 
             <div className="flex items-center gap-2">
               <button
@@ -102,7 +102,7 @@ const Post = ({ imgUrl, author, title, description }: PostType) => {
       <span className="rounded-md border-[1px] border-neutral-500 px-1.5 py-1 text-xs uppercase text-neutral-500">
         {author}
       </span>
-      <p className="mt-1.5 text-lg font-medium">{title}</p>
+      <p className="mt-1.5 text-lg text-zinc-400 font-medium">{title}</p>
       <p className="text-sm text-neutral-500">{description}</p>
     </div>
   );
