@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { Beams } from "../../components/utils/Beams";
 import ComponentContainer from "@/components/ocean/oceancomponent/componentContainer";
 import { CodeCard } from "@/components/features/code/CodeCard";
-import BlogPostCarousel from "@/components/ocean/oceancomponent/carousels/BlogPost/blogPostCarousel";
-import { BlogPostCarouselCode } from "@/components/ocean/oceancomponent/carousels/BlogPost/blogPostCarouselCode";
+import ShiftingCountdown from "@/components/ocean/oceancomponent/countdown/shiftingCountdown.tsx/shiftingCountdown";
+import { ShiftingCountdownCode } from "@/components/ocean/oceancomponent/countdown/shiftingCountdown.tsx/shiftingCountdownCode";
+import StickyCountdown from "@/components/ocean/oceancomponent/countdown/stickyCountdown/stickyCountdown";
+import { StickyCountdownCode } from "@/components/ocean/oceancomponent/countdown/stickyCountdown/stickyCountdownCode";
 
 
 export default function Cards() {
@@ -28,14 +30,18 @@ export default function Cards() {
         }}
         className="mb-3 text-bold text-center text-2xl leading-tight  text-zinc-50  sm:text-2xl sm:leading-tight md:text-3xl md:leading-tight lg:text-4xl lg:leading-tight"
       >
-     <span className="text-rose-500">Carousels</span>
+     <span className="text-rose-500">Countdown</span>
       </motion.h1>
      
       <Beams/> 
       <GradientGrid />
-      <ComponentContainer name="Blog Post Carousel">
-       <BlogPostCarousel/>
-        <CodeCard markup={BlogPostCarouselCode} />
+      <ComponentContainer name="Shifting Countdown">
+       <ShiftingCountdown/>
+        <CodeCard markup={ShiftingCountdownCode} />
+      </ComponentContainer>
+      <ComponentContainer name="Sticky Countdown">
+       <StickyCountdown/>
+        <CodeCard markup={StickyCountdownCode} />
       </ComponentContainer>
     </MaxWidthWrapper>
   );
