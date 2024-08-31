@@ -10,6 +10,8 @@ import { FlyoutNavCode } from "@/components/ocean/oceancomponent/navbar/flyoutNa
 import FlyoutNavExample from "@/components/ocean/oceancomponent/navbar/flyoutNav/flyoutNav";
 import { ExampleCornerNav } from "@/components/ocean/oceancomponent/navbar/cornerNav/cornerNav";
 import { CornerNavCode } from "@/components/ocean/oceancomponent/navbar/cornerNav/cornerNavCode";
+import LiquidSideNav from "@/components/ocean/oceancomponent/navbar/liquidSideNav/liquidSideNav";
+import { LiquidSideNavCode } from "@/components/ocean/oceancomponent/navbar/liquidSideNav/liquidSideNavCode";
 
 
 export default function Cards() {
@@ -48,6 +50,10 @@ export default function Cards() {
       <ComponentContainer name="Corner Nav">
        <ExampleCornerNav/>
         <CodeCard markup={CornerNavCode} />
+      </ComponentContainer>
+      <ComponentContainer name="Corner Nav">
+       <LiquidSideNav/>
+        <CodeCard markup={LiquidSideNavCode} />
       </ComponentContainer>
     </MaxWidthWrapper>
   );
