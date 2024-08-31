@@ -12,6 +12,10 @@ import { ExampleCornerNav } from "@/components/ocean/oceancomponent/navbar/corne
 import { CornerNavCode } from "@/components/ocean/oceancomponent/navbar/cornerNav/cornerNavCode";
 import LiquidSideNav from "@/components/ocean/oceancomponent/navbar/liquidSideNav/liquidSideNav";
 import { LiquidSideNavCode } from "@/components/ocean/oceancomponent/navbar/liquidSideNav/liquidSideNavCode";
+import IconSideNav from "@/components/ocean/oceancomponent/navbar/iconSideNav/iconSideNav";
+import { IconSideNavCode } from "@/components/ocean/oceancomponent/navbar/iconSideNav/iconSideNavCode";
+import { SimpleFloatingNavCode } from "@/components/ocean/oceancomponent/navbar/simpleFloatingNav/simpleFloatingNavCode";
+import { SimpleFloatingNavExample } from "@/components/ocean/oceancomponent/navbar/simpleFloatingNav/simpleFloatingNav";
 
 
 export default function Cards() {
@@ -51,9 +55,17 @@ export default function Cards() {
        <ExampleCornerNav/>
         <CodeCard markup={CornerNavCode} />
       </ComponentContainer>
-      <ComponentContainer name="Corner Nav">
+      <ComponentContainer name="Liquid Side Nav">
        <LiquidSideNav/>
         <CodeCard markup={LiquidSideNavCode} />
+      </ComponentContainer>
+      <ComponentContainer name="Icon Side Nav">
+       <IconSideNav/>
+        <CodeCard markup={IconSideNavCode} />
+      </ComponentContainer>
+      <ComponentContainer name="Simple Floating Nav">
+       <SimpleFloatingNavExample/>
+        <CodeCard markup={SimpleFloatingNavCode} />
       </ComponentContainer>
     </MaxWidthWrapper>
   );
