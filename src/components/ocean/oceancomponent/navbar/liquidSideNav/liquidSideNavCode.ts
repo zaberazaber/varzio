@@ -1,5 +1,5 @@
 export const LiquidSideNavCode = [
-    {name: "CornerNav", codejs:`import { useState } from "react";
+    {name: "LiquidSideNav", codejs:`import { useState } from "react";
 import { FiMenu, FiX, FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 

@@ -1,5 +1,5 @@
 export const IconSideNavCode = [
-    {name: "CornerNav", codejs:`import { AnimatePresence, motion } from "framer-motion";
+    {name: "IconSideNav", codejs:`import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import {
   SiFramer,

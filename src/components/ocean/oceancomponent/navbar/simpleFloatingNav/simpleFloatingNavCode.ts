@@ -1,5 +1,5 @@
 export const SimpleFloatingNavCode = [
-    {name: "CornerNav", codejs:`import React from "react";
+    {name: "SimpleFloatingNav", codejs:`import React from "react";
 import { motion } from "framer-motion";
 
 export const Example = () => {
