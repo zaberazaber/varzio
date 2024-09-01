@@ -6,7 +6,7 @@ const LiquidSideNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="h-screen bg-gradient-to-br from-violet-600 to-indigo-600 grid place-content-center relative">
+    <div className="h-screen bg-gradient-to-br from-violet-600 to-rose-600 grid place-content-center">
       <div className="flex items-center text-white">
         <span className="text-sm">Open nav</span>
         <FiArrowRight className="mr-4 ml-2" />
@@ -14,7 +14,7 @@ const LiquidSideNav = () => {
           whileHover={{ rotate: "180deg" }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen(true)}
-          className="text-3xl bg-white text-black hover:text-indigo-500 transition-colors p-4 rounded-full"
+          className="text-3xl bg-white text-black hover:text-rose-500 transition-colors p-4 rounded-full"
         >
           <FiMenu />
         </motion.button>
@@ -33,13 +33,13 @@ const Nav = ({
 }) => {
   return (
     <motion.nav
-      className="fixed top-0 bottom-0 w-screen bg-white"
+      className="absolute left-0 right-0 top-0 bottom-0 w-screen bg-white"
       animate={isOpen ? "open" : "closed"}
       variants={navVariants}
       initial="closed"
     >
       <motion.button
-        className="text-3xl bg-white text-black hover:text-indigo-500 border-[1px] border-transparent hover:border-indigo-500 transition-colors p-4 rounded-full absolute top-8 right-8"
+        className=" text-3xl bg-white text-black hover:text-rose-500 border-[1px] border-transparent hover:border-rose-500 transition-colors p-4 rounded-full relative fixed top-8 left-8"
         whileHover={{ rotate: "180deg" }}
         onClick={() => setIsOpen(false)}
         whileTap={{ scale: 0.9 }}
@@ -62,7 +62,7 @@ const Nav = ({
 const NavLink = ({ text }: { text: string }) => {
   return (
     <motion.a
-      className="inline-block z-10 text-slate-800 w-fit font-black text-7xl hover:text-indigo-500 transition-colors"
+      className="inline-block z-10 text-slate-800 w-fit font-black text-7xl hover:text-rose-500 transition-colors"
       variants={navLinkVariants}
       transition={{
         type: "spring",
