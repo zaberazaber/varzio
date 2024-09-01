@@ -16,6 +16,11 @@ import IconSideNav from "@/components/ocean/oceancomponent/navbar/iconSideNav/ic
 import { IconSideNavCode } from "@/components/ocean/oceancomponent/navbar/iconSideNav/iconSideNavCode";
 import { SimpleFloatingNavCode } from "@/components/ocean/oceancomponent/navbar/simpleFloatingNav/simpleFloatingNavCode";
 import { SimpleFloatingNavExample } from "@/components/ocean/oceancomponent/navbar/simpleFloatingNav/simpleFloatingNav";
+import SideStaggerNavigationExample from "@/components/ocean/oceancomponent/navbar/sideStaggerNavigation/sideStaggerNavigation";
+import { SideStaggerNavigationCode } from "@/components/ocean/oceancomponent/navbar/sideStaggerNavigation/sideStaggerNavigationCode";
+import { GlassNavigationCode } from "@/components/ocean/oceancomponent/navbar/glassNavigation/glassNavCode";
+import GlassNavigationExample from "@/components/ocean/oceancomponent/navbar/glassNavigation/glassNav";
+
 
 
 export default function Cards() {
@@ -66,6 +71,14 @@ export default function Cards() {
       <ComponentContainer name="Simple Floating Nav">
        <SimpleFloatingNavExample/>
         <CodeCard markup={SimpleFloatingNavCode} />
+      </ComponentContainer>
+      <ComponentContainer name="Side Staggered Nav">
+       <SideStaggerNavigationExample/>
+        <CodeCard markup={SideStaggerNavigationCode} />
+      </ComponentContainer>
+      <ComponentContainer name="Glass Nav">
+       <GlassNavigationExample/>
+        <CodeCard markup={GlassNavigationCode} />
       </ComponentContainer>
     </MaxWidthWrapper>
   );
