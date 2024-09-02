@@ -8,7 +8,7 @@ interface Props {
 
 export const MaxWidthWrapper = ({ children, className = "" }: Props) => {
   return (
-    <div className={twMerge("mx-auto w-full px-4 md:px-8", className)}>
+    <div className={twMerge("", className)}>
       {children}
     </div>
   );
