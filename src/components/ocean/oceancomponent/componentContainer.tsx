@@ -16,9 +16,11 @@ export default function ComponentContainer(props: Props) {
   const transformStyle =
     activeButton === "view" ? "translateX(0%)" : "translateX(100%)";
   return (
-    <div id={"name"} className="container mb-8  md:mb-12">
+    
+    <div id={"name"} className="container mb-8 mx-auto max-w-7xl px-4 md:px-8 md:mb-12">
       <div className="overflow:hidden relative mb-3 flex items-center justify-between">
         <div className="flex min-w-0 flex-wrap items-center  gap-2">
+       
           <h4 className="line-clamp-1 text-xl font-medium">{props.name}</h4>
         </div>
         <div className="flex min-w-0 items-center gap-4">
