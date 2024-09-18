@@ -18,7 +18,7 @@ export const Customers = () => {
 
   return (
     <section id="testimonials" className="relative overflow-hidden">
-      <MaxWidthWrapper className="relative z-10 py-20 md:py-40">
+      <MaxWidthWrapper className="relative px-20 z-10 py-20 md:py-40">
         <SectionHeadingSpacing>
           <SectionHeading>Loved by our customers</SectionHeading>
           <SectionSubheading>

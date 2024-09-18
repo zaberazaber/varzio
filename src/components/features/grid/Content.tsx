@@ -12,7 +12,7 @@ import { SectionHeadingSpacing } from "@/components/utils/SectionHeadingSpacing"
 export const Content = () => {
   return (
     <section>
-      <MaxWidthWrapper className="relative z-20 pb-20 pt-20 md:pb-28 md:pt-40">
+      <MaxWidthWrapper className="relative px-20 z-20 pb-20 pt-20 md:pb-28 md:pt-40">
         <SectionHeadingSpacing>
           <SectionHeading>
             Show the world

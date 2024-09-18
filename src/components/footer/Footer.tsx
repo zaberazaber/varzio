@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="relative overflow-hidden py-12">
+    <footer className="relative overflow-hidden py-12 px-20">
       <MaxWidthWrapper className="relative z-20 grid grid-cols-12 gap-x-1.5 gap-y-6">
         <LogoColumn />
         <GenericColumn

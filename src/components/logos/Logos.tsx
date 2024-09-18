@@ -44,7 +44,7 @@ import { DiAngularSimple, DiDart, DiDjango, DiDocker, DiDotnet, DiDrupal, DiGith
 
 export const Logos = () => {
   return (
-    <section className="relative -mt-2 -rotate-1 bg-zinc-950 scale-[1.01] border-y-2 border-rose-900 bg-rose">
+    <section className="relative -mt-2 -rotate-1 bg-zinc-950 border-y-2 px-2 border-rose-900 bg-rose w-[99.6%]">
       <div className="relative z-0 flex overflow-hidden border-b-2 border-rose-900">
         <TranslateWrapper>
           <LogoItemsTop />
